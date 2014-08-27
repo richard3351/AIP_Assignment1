@@ -7,35 +7,53 @@
         <title>Register</title>
     </h:head>
     <h:body>
-        <h1>
-            Register
-        </h1>
-        <ui:composition>
-            <h:form>
-                <fieldset><legend>Enter Registration Information</legend>
-                    <ul>
-                        <li>
-                            <h:outputLabel for="fname" value="First Name: "/>
-                              <h:inputText id="fname" value ="#{registrationBean.firstName}"/>             
-                        </li>
-                        <li>
-                              <h:outputLabel for="lname" value="Last Name: "/>
-                              <h:inputText id="lname" value ="#{registrationBean.lastName}"/>
-                        </li>
-                        <li>
-                            <h:outputLabel for="email" value="Email Address: "/>
-                            <h:inputText id="email" value="#{registrationBean.email}"/>
-                        </li>
-                    </ul>
-                    <p>
-                        <h:commandButton value="Submit" action="#{registrationBean.submitAction}" style="margin-left:35px;"/>                      
-                    </p>
-                                       
-                </fieldset>
-            </h:form>
-        </ui:composition>
+        <h1 align="center" style="color:blueviolet; font-size: 30pt; ">Online Shoes Store</h1>
+        <h2 align='center'>Register</h2>
+        <h4 align='center' style='color: red;'>* information are required</h4>
         
-        
+        <h:form>
+            <p align='center'>
+                <label>First Name:
+                    <h:inputText value=""/>                    
+                </label>
+            </p>
+            <p align='center'>
+                <label>Last Name:
+                    <h:inputText value=""/>                   
+                </label>
+            </p>
+            <p align='center'>
+                <label>Date of Birth:
+                    <h:inputText value=""/>
+                </label>            
+            </p>
+             <p align='center'>
+                <label>Gender:
+                    <h:inputText value=""/>                    
+                </label>
+            </p>
+             <p align='center'>
+                <label>Email:
+                    <h:inputText value=""/>                    
+                </label>
+            </p>
+             <p align='center'>
+                <label>Password:
+                    <h:inputText value=""/>                    
+                </label>
+            </p>
+             <p align='center'>
+                <label>Confirm password:
+                    <h:inputText value=""/>                    
+                </label>
+            </p>
+            <p align='center'>
+                <h:button value="Cancel" outcome="homepage"/>
+                <h:button value="Complete" outcome="shop"/>
+            </p>
+                  
+            
+        </h:form>
         
     </h:body>
 </html>
